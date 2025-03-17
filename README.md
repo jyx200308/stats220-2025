@@ -13,6 +13,6 @@ My name is Yuxuan ji.Currently studying Statistics at the University of Auckland
 
 ### hobbies
 
-1.basketball
-2.lego
-3.computer games
+1.Basketball
+2.lLgo
+3.Computer games
