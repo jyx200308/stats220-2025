@@ -8,8 +8,8 @@ My name is Yuxuan ji.Currently studying Statistics at the University of Auckland
 
 
 ### working experience
-- Banking internships in summer
-- Internship in an import/export trading company
+- Had an internship at an international trading company during the summer holidays (hopefully I'll be the big boss of an international company!!!).😁
+- Interned at a bank at the end of high school. 🏫
 
 ### hobbies
 
