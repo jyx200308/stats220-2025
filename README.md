@@ -12,6 +12,6 @@ My name is Yuxuan ji.Currently studying Statistics at the University of Auckland
 - Internship in an import/export trading company
 
 ### hobbies
-1, basketball
-2, lego
-3, computer games
+1.basketball
+2.lego
+3.computer games
