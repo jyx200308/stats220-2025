@@ -1,0 +1,54 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+library(tidyverse)
+```
+
+```{css}
+body{
+background:linear-gradient(to right, #7FFF00, #8DFFFF,#C1C1DD);color:#6495ED}
+h1,h2{
+font-family:Comic Sans MS;}
+p{
+font-family:Georgia;}
+
+```
+
+
+## Draw bar chart
+```{r}
+#Read the document and rename it
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ02yK4obkY6OcuLO45UMOXfoKLeARYSBRJgQuOmJDuj0slHtWgPeRhf5zt6n9XZohtEtxNSVBoNFGU/pub?output=csv")
+lasted_data <- rename(logged_data,type = "What kind of video to watch each time?",
+                       reason = "What is the main reason for watching YouTube videos everyday?",
+                       time = "How long to watch each day?(hours)")
+
+#Observation of vertical charts
+lasted_data  %>%
+  ggplot() +
+  geom_bar(aes(x = type),colour="black",fill="green")
+```
+
+
+
+```{r}
+#read data time and fill type
+lasted_data %>%
+  ggplot()+
+  geom_bar(aes(x = time,fill = type))+
+  labs(x="viewing time",y="What count of type")
+```
+
+
+```{r}
+#How many people are interested in all kinds of videos
+lasted_data %>%
+  ggplot()+
+  geom_bar(aes(y = reason,,fill = type))+
+  labs(title = "Number of reasons for each type of video choice")
+```
+
