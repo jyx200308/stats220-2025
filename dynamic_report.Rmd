@@ -52,3 +52,28 @@ lasted_data %>%
   labs(title = "Number of reasons for each type of video choice")
 ```
 
+
+```{r}
+## What is the maximum viewing time?
+max_time <- max(lasted_data$time)
+paste("The maximum viewing time is",max_time,"hours")
+
+
+## What is the minimum viewing time?
+min_time<-min(lasted_data$time)
+paste("The minimum viewing time is",min_time,"hours")
+
+## Type of video viewed most often
+max_type <- lasted_data$type[which.max(lasted_data$time)]
+paste("The Most viewed is",max_type)
+
+
+## Types of videos watched the least number of times
+min_type <- lasted_data$type[which.min(lasted_data$time)]
+paste("The less viewed is",min_type)
+```
+
+
+
+
+
